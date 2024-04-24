@@ -1,4 +1,4 @@
-let {filterNumber, increaseScore, squareOfNumber} = require("./Task.js")
+let {filterNumber, increaseScore, squareOfNumber, filterTime, expenseTracker} = require("./Task.js")
 
 test("Filter number", () => {
     let arrays = [20, 70, 77, 55, 85]
@@ -19,6 +19,23 @@ test("Square of Number", () => {
     let results = squareOfNumber(arrays)
 
     expect(results).toEqual([4, 16, 36, 64, 100])
+})
+
+test("Filter time", () => {
+    let times = ["9: 00AM", "11:00AM", "1:00PM", "3:00PM", "5:00PM"];
+    let time = "PM";
+
+    let result = filterTime(times, time);
+
+    expect(result).toEqual(["1:00PM", "3:00PM", "5:00PM"]);
+})
+
+test("Expense tracker", ()=>{
+    let jake = { groceries: 150, diningOut: 100, transportation: 50, entertainment: 80 };
+
+    let result = expenseTracker(jake)
+
+    expect(result).toEqual(380)
 })
 
 
