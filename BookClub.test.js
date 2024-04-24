@@ -1,26 +1,10 @@
 let assignBook = require("./BookClub.js");
 
 test("Assigning book", () => {
-    let Emily ={
-        name: "Emily",
-        book: ""
-    }
-
-    let Jack = {
-        name: "Jack",
-        book: ""
-    }
-
-    let Sophia = {
-        name: "Sophia",
-        book: ""
-    }
-
-    let Daniel = {
-        name: "Daniel",
-        book: ""
-    }
-    let persons = [Emily, Jack, Sophia, Daniel];
+    let persons = [{name: "Emily", book: ""},
+                                              {name: "Jack", book: ""},
+                                              {name: "Sophia",book: ""},
+                                              {name: "Daniel", book: ""}];
 
     let books = ["Tidy First", "Simple Made Easy", "Refactoring", "Clean Code"]
 
