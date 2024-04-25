@@ -27,10 +27,10 @@ console.log(goat)
 let vehicle = {wheels : 4}
 let car = {
     seats: 5,
-    __proto__ : vehicle,
+    proto : vehicle,
     wheels: 6
 }
 
-console.log('Vehicle:', vehicle, vehicle.__proto__)
-console.log('car:', car, car.__proto__)
+console.log('Vehicle:', vehicle, vehicle.proto)
+console.log('car:', car, car.proto)
 console.log('car.wheels:' ,car.wheels)
