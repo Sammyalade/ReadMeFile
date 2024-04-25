@@ -1,10 +1,11 @@
+//1. Prototype Based
 let animal = {
     type: "unknown",
     sound: function (){
         console.log("The "+this.type+ " makes a sound")
     }
 }
-
+//Create
 let dog = Object.create(animal)
 dog.type = "Dog"
 dog.color = "White"
@@ -17,13 +18,13 @@ cat.type = "cat"
 console.log(cat)
 console.log(animal)
 
-
+//setPrototypeOf
 let goat = {}
 Object.setPrototypeOf(goat, animal)
 goat.type = "Goat"
 console.log(goat)
 
-
+//proto
 let vehicle = {wheels : 4}
 let car = {
     seats: 5,
@@ -31,6 +32,21 @@ let car = {
     wheels: 6
 }
 
-console.log('Vehicle:', vehicle, vehicle.proto)
+console.log('Vehicle:', vehicle, vehicle.__proto__)
 console.log('car:', car, car.proto)
 console.log('car.wheels:' ,car.wheels)
+
+
+//2. Function Based
+
+function Person(name, age){
+    this.name = name;
+    this.age = age;
+
+    this.sayName = function(){
+        console.log(this.name);
+    }
+}
+
+const personOne = new Person("Name", 50);
+console.log(personOne)
