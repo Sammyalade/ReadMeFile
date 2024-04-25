@@ -1,4 +1,6 @@
-class Rectangle extends Shapes{
+let Shapes = require("./Shapes.js");
+
+class Rectangle extends Shapes {
 
     constructor(name, side1, side2) {
         super(name);
@@ -14,3 +16,5 @@ class Rectangle extends Shapes{
     }
 
 }
+
+module.exports = Rectangle;
