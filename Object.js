@@ -59,4 +59,5 @@ const json = '{"name": "Name", "age": 50}';
 const obj = JSON.parse(json)
 console.log(obj)
 
-console.log(obj.age)
+const string = JSON.stringify(obj)
+console.log(string)
