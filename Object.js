@@ -53,3 +53,9 @@ console.log(personOne)
 
 const personTwo = new Person("Person Two", 29);
 console.log(personTwo)
+
+const json = '{"name": "Name", "age": 50}';
+const obj = JSON.parse(json)
+console.log(obj)
+
+console.log(obj.age)
