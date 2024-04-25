@@ -50,3 +50,6 @@ function Person(name, age){
 
 const personOne = new Person("Name", 50);
 console.log(personOne)
+
+const personTwo = new Person("Person Two", 29);
+console.log(personTwo)
