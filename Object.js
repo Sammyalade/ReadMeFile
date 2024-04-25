@@ -48,6 +48,7 @@ function Person(name, age){
     }
 }
 
+//JSON.parse
 const personOne = new Person("Name", 50);
 console.log(personOne)
 
